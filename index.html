@@ -262,27 +262,34 @@
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <div class="content">
-                <form id="contact" method="POST" data-netlify="true">
+                <form id="contact-form" method="POST" data-netlify="true">
                     <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Your Name">
+                                <label for="name" class="animated pulse">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required="required">
                             </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="phone">Phone</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Phone Number">
+                            <label for="phone" class="animated pulse">Phone</label>
+                                <input type="phone" id="phone" name="phone" required="required">
                         <div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                          <label for="email">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label for="email" class="animated pulse">Email</label>
+                            <input type="email" id="email" name="email" placeholder="sample@mail.com" required="required">
                         </div>
                     </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="message" class="animated pulse">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="field"></div>
                     <br>
                     <div data-netlify-recaptcha="true"></div>
                     <br>
